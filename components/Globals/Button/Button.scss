@@ -1,0 +1,106 @@
+@import "../../../assets/styles/variables.scss";
+
+.btn {
+  text-align: center;
+  cursor: pointer;
+  transition: .2s;
+
+  svg > path {
+    transition: .2s;
+  }
+}
+
+// borderType
+.round {
+  border-radius: 99px;
+}
+
+.default {
+  border-radius: 4px;
+}
+
+// backgroundType
+
+// Fill
+.fill {
+  border: none;
+}
+
+.fill.primary {
+  color: $white;
+  background-color: $primary-blue;
+
+  &:hover {
+    background-color: $hover-primary-blue
+  }
+}
+
+.fill.secondary {
+  color: $white;
+  background-color: $secondary-blue;
+
+  &:hover {
+    background-color: $hover-secondary-blue;
+  }
+}
+
+.fill.success {
+  color: $white;
+  background-color: $green;
+
+  &:hover {
+    background-color: $hover-green;
+  }
+}
+
+.fill.danger {
+  color: $white;
+  background-color: $red;
+
+  &:hover {
+    background-color: $hover-red;
+  }
+}
+
+.fill.disable {
+  color: rgba(0, 32, 51, 0.35);
+  background-color: $primary-gray;
+  cursor: default;
+}
+
+
+// Outline
+.outline {
+  border: 1px solid;
+  background-color: transparent;
+}
+
+.outline.primary {
+  color: $primary-blue;
+  border-color: $primary-blue;
+
+  &:hover {
+    background-color: $primary-blue;
+    color: $white;
+  }
+}
+
+.outline.secondary {
+  color: $secondary-blue;
+  border-color: $secondary-blue;
+
+  &:hover {
+    background-color: $secondary-blue;
+    color: $white;
+  }
+}
+
+.outline.danger {
+  color: $red;
+  border-color: $red;
+
+  &:hover {
+    background-color: $red;
+    color: $white;
+  }
+}

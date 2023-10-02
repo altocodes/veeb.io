@@ -1,0 +1,27 @@
+{
+  "name": "veeb.io",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbo",
+    "build": "next build",
+    "start": "next start -H $APP_IP -p $APP_PORT",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@consta/uikit": "^4.28.1",
+    "@types/node": "20.5.9",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "lodash": "^4.17.21",
+    "next": "13.4.19",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.66.1",
+    "sass-loader": "^13.3.2",
+    "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.198"
+  }
+}

@@ -1,0 +1,62 @@
+.paidTariff {
+  width: 700px;
+  padding: 40px;
+
+  .heading {
+    .title {
+      font-size: 32px;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+    margin: 20px 0;
+
+    .selectionBlock {
+
+      .label {
+        margin-bottom: .5rem;
+        color: rgba(0, 32, 51, 0.60);
+      }
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        max-height: 300px;
+        overflow-y: scroll;
+        margin-top: 10px;
+        border: 1px solid rgba(0, 66, 105, 0.28);
+        border-radius: 4px;
+        box-shadow: 0px 8px 24px 0px rgba(0, 32, 51, 0.12), 0px 4px 4px 0px rgba(0, 32, 51, 0.04);
+        
+        .item {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          padding: 12px;
+          transition: .2s;
+
+          &:hover {
+            background-color: rgba(0, 66, 105, 0.07);
+          }
+        }
+      }
+    }
+
+    .submitBtn {
+      width: fit-content;
+      padding: 10px 20px;
+    }
+  }
+}
+
+
+@media(max-width: 700px) {
+  .paidTariff {
+    width: 100%;
+  }
+}

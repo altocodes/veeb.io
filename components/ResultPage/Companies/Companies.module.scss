@@ -1,0 +1,144 @@
+.companies {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+
+  .title {
+    color: #002033;
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  .companyData {
+    display: flex;
+    gap: 140px;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 32px;
+      width: 230px;
+      height: 230px;
+      border-radius: 16px;
+      border: 1px solid rgba(0, 66, 105, 0.26);
+      background-color: #FFFFFF;
+    }
+
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      .infoItem {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        flex: 1 1 40%;
+        
+        .inputField {
+          display: flex;
+          align-items: center;
+
+            .value {
+              max-width: 350px;
+              font-size: 20px;
+              cursor: default;
+
+              &:hover {
+                text-decoration: none;
+              }
+            }
+        }
+
+
+        .subTitle {
+          color: #002033;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .description {
+    color: rgba(0, 32, 51, 0.62);
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .btnGroup {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+
+    button {
+      display: flex;
+      align-items: center;
+      padding: 10px 24px;
+
+      & > svg {
+        margin-right: 14px;
+      }
+    }
+
+    .downloadBtn {
+      & > svg > path {
+        fill: #FFFFFF;
+      }
+    }
+
+    .submitBtn {
+      & > svg > path {
+        fill: #0078D2;
+      }
+
+      &:hover svg > path {
+        fill: #FFFFFF;
+      }
+    }
+  }
+}
+
+@media(max-width: 800px) {
+  .companies {
+    .companyData {
+      .info {
+        .infoItem {
+          flex: 1 1 100%;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 600px) {
+  .companies {
+    gap: 1rem;
+
+    .title {
+      text-align: center;
+    }
+
+    .companyData {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+
+      .info {
+        
+        .infoItem {
+          align-items: center;
+          text-align: center;
+        }
+      }
+    }
+
+    .description {
+      text-align: center;
+    }
+
+    .btnGroup {
+      flex-direction: column;
+    }
+  }
+}

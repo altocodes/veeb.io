@@ -1,0 +1,108 @@
+.sideForm {
+  position: sticky;
+  top: 2rem;
+  max-width: 350px;
+  height: fit-content;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    padding: 32px 24px;
+    border-radius: 16px;
+    background: rgba(2, 2, 176, 0.07);
+  
+    .title {
+      color: #002033;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  
+    .inputGroup {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+  
+      & > label {
+        color: rgba(0, 32, 51, 0.60);
+        font-size: 12px;
+      }
+  
+      .selectField {
+        border-color: #00426947;
+      }
+
+      .sampleField {
+        padding: 7px 9px;
+        border-radius: 4px;
+        border: 1px solid rgba(0, 66, 105, 0.28);
+        background-color: #FFFFFF;
+        color: #002033;
+        font-size: 14px;
+      }
+    }
+  
+    .btnGroup {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      
+      button {
+        padding: 7px 15px;
+      }
+  
+      .copyBtn {
+        display: flex;
+        align-items: center;
+
+        & > svg {
+          margin-right: 11px;
+        }
+      }
+  
+      .createBtn {
+        width: 150px;
+      }
+    }
+  }
+}
+
+@media(max-width: 1600px) {
+  .sideForm {
+    display: none;
+  }
+  // todo
+  // .sideForm {
+  //   position: relative;
+  //   top: 0;
+  //   max-width: 100%;
+  //   margin-bottom: 1rem;
+
+  //   .container {
+  //     width: 50%;
+  //     margin: 0 auto;
+
+  //     .title {
+  //       text-align: center;
+  //     }
+  //   }
+  // }
+}
+
+// @media(max-width: 1000px) {
+//   .sideForm {
+//     .container {
+//       width: 100%;
+//     }
+//   }
+// }
+
+// @media(max-width: 400px) {
+//   .container {
+//     .btnGroup {
+//       flex-direction: column;
+//     }
+//   }
+// }

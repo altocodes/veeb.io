@@ -1,0 +1,117 @@
+@import "../../../assets/styles/variables.scss";
+
+.header {
+  width: 100%;
+  box-shadow: 0px 4px 6px 0px rgba(80, 80, 118, 0.07);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    padding: 20px 0;
+    margin: 0 auto;
+    transition: .2s;
+
+    .leftHand {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        cursor: pointer;
+      }
+
+      .divider {
+        width: 1px;
+        height: 23px;
+        margin: 0 26px;
+        background: $primary-gray;
+      }
+
+      .title {
+        font-size: 9px;
+        font-weight: 500;
+        letter-spacing: 2.7px;
+        text-transform: uppercase;
+      }
+    }
+    
+    .rightHand {
+      display: flex;
+      align-items: center;
+
+      .links {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 50px;
+
+        .link > a {
+          font-size: 13px;
+        }
+      }
+
+      .icons {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+        
+        svg {
+          cursor: pointer;
+        }
+
+        .profile > svg {
+          width: 32px;
+          height: 32px;
+        }
+
+        .menu {
+          display: none;
+
+          svg {
+            width: 38px;
+            height: 38px; 
+  
+            path {
+              fill: #4343FF;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media(max-width: 800px) {
+  .header {
+    .container {
+      width: 90%;
+
+      .leftHand {
+        .divider {
+          display: none;
+        }
+
+        .title {
+          display: none;
+        }
+      }
+
+      .rightHand {
+        .links {
+          display: none;
+        }
+
+        .icons {
+          .profile {
+            display: none;
+          }
+
+          .menu {
+            display: block;
+          }
+        }
+      } 
+    }
+  }
+}

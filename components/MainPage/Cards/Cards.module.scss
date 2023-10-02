@@ -1,0 +1,126 @@
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 110px;
+  margin-bottom: 125px;
+  transition: .2s;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    min-width: 230px;
+    min-height: 170px;
+    transition: .2s;
+  
+  
+    .picture {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      height: 170px;
+      padding: 8px 12px;
+      border-radius: 16px;
+      background: rgba(2, 2, 176, 0.07);
+  
+      .itemGroup {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+  
+        .item {
+          width: 120px;
+          padding: 10px 6px;
+          border-radius: 8px;
+          background: #FFFFFF;
+          color: #002033;
+          text-align: center;
+          font-size: 15px;
+        }
+      }
+    }
+  
+    .picture2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
+      height: 170px;
+      padding: 18px 35px;
+      border-radius: 16px;
+      background: rgba(2, 2, 176, 0.07);
+  
+      .itemGroup {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 16px;
+        border-radius: 8px;
+        background: #FFFFFF;
+  
+        .checkBox {
+          width: 12px;
+          height: 12px;
+        }
+  
+        .text {
+          font-size: 12px;
+          line-height: 100%; 
+        }
+      }
+    }
+  
+    .picture3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 170px;
+      padding: 50px 25px;
+      border-radius: 16px;
+      background: rgba(2, 2, 176, 0.07);
+  
+      .btn {
+        text-align: center;
+        padding: 10px 24px;
+        transform: rotate(-10.498deg);
+      }
+    }
+  
+    .description {
+      color: #002033;
+      text-align: center;
+    }
+  }
+}
+
+
+
+@media (max-width: 1300px) {
+  .cardContainer {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cardContainer {
+    flex-wrap: wrap;
+    .card {
+      flex: 1 1 40%;
+
+      .description {
+        max-width: 70%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .cardContainer {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,39 @@
+.textareaField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  label {
+    margin-bottom: .5rem;
+    color: rgba(0, 32, 51, 0.60);
+  }
+
+  textarea {
+    width: 100%;
+    padding: 11px 15px;
+    resize: none;
+    border-color: #00426947;
+    font-size: 18px;
+    outline: none;
+  }
+
+  .round {
+    border-radius: 24px;
+  }
+
+  .default {
+    border-radius: 4px;
+  }
+  
+  textarea::placeholder {
+    color: rgba(0, 32, 51, 0.35);
+  }
+
+  .errorLabel {
+    margin-top: 4px;
+    margin-left: 13px;
+    color: #EB3333;
+    font-size: 12px;
+    line-height: 100%; 
+  }
+}

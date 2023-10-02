@@ -1,0 +1,72 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  .title {
+    margin-bottom: 32px;
+    font-size: 24px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+
+    .agreementField {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+
+      input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        border: 1px solid rgba(0, 66, 105, 0.28);
+        border-radius: 4px;
+      }
+
+      .text {
+        font-size: 14px;
+        line-height: 120%;
+      }
+    }
+
+    .submitBtn {
+      width: 100%;
+      text-align: center;
+      padding: 16px 0;
+      margin-top: 30px;
+    }
+
+    .submitBtn[disabled] {
+      color: rgba(0, 32, 51, 0.26);
+      background: rgba(0, 66, 105, 0.07);
+    }
+  }
+}
+
+.successBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+
+  .text {
+    margin: 32px 0 64px 0;
+    font-size: 24px;
+  }
+
+  .backBtn {
+    border: none;
+    font-size: 18px;
+    color: #4343FF;
+    background-color: inherit;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

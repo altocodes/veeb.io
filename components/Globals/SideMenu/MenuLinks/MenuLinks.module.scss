@@ -1,0 +1,72 @@
+.menuLinks {
+  width: 450px;
+  padding: 40px 30px;
+
+  .heading {
+    display: flex; 
+    align-items: center;
+    gap: 1rem;
+
+    .logo > svg {
+      border-radius: 15px;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      
+      .title {
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      .subTitle {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    list-style: none;
+
+    .link {
+      border-radius: 20px;
+      transition: .2s;
+      cursor: pointer;
+
+      &:hover {
+        background: rgba(2, 2, 176, 0.07);
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 10px;
+        font-size: 19px;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        svg {
+          width: 45px;
+          height: 45px;
+        }
+      }
+    }
+  }
+
+  .doubleOverlay > aside {
+    z-index: 9999;
+  }
+}
+
+@media(max-width: 450px) {
+  .menuLinks {
+    width: 100%;
+  }
+}

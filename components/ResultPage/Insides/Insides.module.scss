@@ -1,0 +1,36 @@
+.insides {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .title {
+    color: #002033;
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  .tabs {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+
+    .tabItem {
+      padding-bottom: 7px;
+      border-bottom: 2px solid rgba(0, 0, 0, 0);
+      cursor: pointer;
+
+      &:hover {
+        border-bottom: 2px solid #4343FF;
+      }
+    }
+
+    .tabItem:first-child {
+      // border-bottom: 2px solid #4343FF;
+    }
+  }
+
+  .tabSearchResult {
+    color: #002033;
+    font-size: 18px;
+  }
+}

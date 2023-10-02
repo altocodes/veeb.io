@@ -1,0 +1,16 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  .title {
+    color: #002033;
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  .table {
+    overflow-x: auto;
+  }
+}
+

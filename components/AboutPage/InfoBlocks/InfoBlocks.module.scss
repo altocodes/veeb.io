@@ -1,0 +1,124 @@
+.infoBlocks {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+
+  .block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 600px;
+
+      .title {
+        font-size: 32px;
+        font-weight: 500;
+      }
+
+      .text {
+        font-size: 18px;
+      }
+    }
+
+    .picture {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      max-width: 600px;
+      min-width: 600px;
+      border-radius: 16px;
+      background: rgba(2, 2, 176, 0.07);
+    }
+
+    .pic1 {
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 50px;
+
+      span {
+        min-width: 160px;
+        max-width: 160px;
+        padding: 10px 0;
+        text-align: center;
+        border-radius: 8px;
+        background: #FFF;
+      }
+    }
+
+    .pic2 {
+      padding: 50px 100px;
+
+      img {
+        max-width: 230px;
+        max-height: 210px;
+      }
+    }
+
+    .pic3 {
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px 110px;
+
+      span {
+        text-align: center;
+        font-size: 22px;
+      }
+
+      button {
+        padding: 10px 30px;
+        border-radius: 99px;
+        border: none;
+        color: #FFFFFF;
+        background: #02BD85;
+        transform: rotate(-10.498deg);
+      }
+    }
+  }
+
+  .block:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+@media(max-width: 1200px) {
+  .block {
+    flex-direction: column !important;
+    gap: 50px !important;
+
+    .info {
+      .title, .text, .link {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .infoBlocks {
+    gap: 4rem !important;
+
+    .block {
+      gap: 3rem !important;
+
+      .picture {
+        max-width: 90%;
+        min-width: 90%;
+      }
+
+      .pic1 {
+        flex-direction: column;
+        padding: 1.5rem;
+      }
+
+      .pic2 {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

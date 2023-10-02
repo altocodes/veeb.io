@@ -1,0 +1,33 @@
+.myInfoDeletion {
+  display: flex; 
+  flex-direction: column;
+  gap: 32px;
+  width: 700px;
+
+  .heading {
+    max-width: 80%;
+
+    .title {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    .subTitle {
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 60%;
+
+
+
+    // submit form btn
+    button {
+      width: fit-content;
+      padding: 10px 20px;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.output {
+  .empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+  
+    .title {
+      margin: 32px 0 16px 0;
+      font-size: 32px;
+      font-weight: 500;
+    }
+  
+    .text {
+      text-align: center;
+      font-size: 18px;
+    }
+  
+    .link {
+      margin-top: 64px;
+    }
+  }
+
+  .list {
+    margin: 56px 0;
+
+    .heading {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .title {
+        font-size: 52px;
+        font-weight: 700;
+      }
+
+      .subtitle {
+        font-size: 18px;
+      }
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin-top: 56px;
+
+      .btnGroup {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        button {
+          display: flex;
+          align-items: center;
+          padding: 10px 20px;
+
+          & > svg {
+            width: 16px;
+            height: 16px;
+          }
+        }
+        
+        .exportBtn {
+          svg {
+            margin-right: 14px;
+          }
+        }
+
+        .searchBtn {
+          svg {
+            margin-left: 14px;
+          }
+
+          &:hover svg > path {
+            fill: #FFFFFF;
+          }
+        }
+      }
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 100%;
+
+        .item {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          padding: 24px 32px;
+          border-radius: 4px;
+          box-shadow: 0px 2px 8px 0px rgba(0, 32, 51, 0.16), 0px 2px 2px 0px rgba(0, 32, 51, 0.02);
+          transition: .2s;
+
+          &:hover {
+            transform: scale(1.01);
+          }
+
+          .info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 35%;
+
+            .name {
+              color: #4343FF;
+              font-size: 20px;
+              cursor: pointer;
+            }
+
+            .count {
+              font-size: 14px;
+              line-height: 120%;
+            }
+          }
+
+          svg {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+

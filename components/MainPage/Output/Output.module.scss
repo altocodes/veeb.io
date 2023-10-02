@@ -1,0 +1,61 @@
+.output {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 110px 0;
+  margin: 0 auto;
+
+  .loadLink {
+    margin-top: 10px;
+    align-self: flex-end;
+    color: #4343FF;
+    font-size: 12px;
+    cursor: pointer;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 140px;
+  
+    .failBlock {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+  
+      svg {
+        width: 75px;
+        height: 75px;
+  
+        path {
+          fill: #FE4243;
+        }
+      }
+  
+      .failText {
+        text-align: center;
+        font-weight: 500;
+        color: #FE4243;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .output {
+    padding: 3rem 0;
+
+    .content {
+      margin-top: 4rem;
+    }
+  }
+}

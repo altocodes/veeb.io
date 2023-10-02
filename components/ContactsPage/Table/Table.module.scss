@@ -1,0 +1,95 @@
+.table {
+  margin-top: 1rem;
+  
+  table {
+    border-collapse: collapse;
+    
+    thead {
+      th {
+        color: #ABABAB;
+        font-size: 12px;
+      }
+    }
+
+    tbody {
+      td {
+        font-size: 14px;
+
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+    tr {
+      display: flex;
+      align-items: center;
+    }
+
+    th, td {
+      width: 140px;
+      max-width: 140px;
+      padding: 10px 0;
+      margin-right: 1rem;
+      text-align: start;
+
+      .inProgressIcon > svg {
+        animation: infiniteRotation 1.5s infinite linear;
+      }
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 16px;
+        width: 150px;
+        max-width: 150px;
+      }
+
+      .checkBtn {
+        svg {
+          width: 16px;
+          height: 16px;
+          margin-left: 10px;
+
+          & > path {
+            fill: #4343FF;
+          }
+        }
+
+        &:hover svg > path {
+          fill: #FFFFFF;
+        }
+      }
+
+      .removeBtn {
+        svg {
+          width: 16px;
+          height: 16px;
+          margin-left: 10px;
+
+          & > path {
+            fill: #FE4243;
+          }
+        }
+
+        &:hover svg > path {
+          fill: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+
+@keyframes infiniteRotation {
+	0% {
+		transform: rotate(0deg);
+  }
+  50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

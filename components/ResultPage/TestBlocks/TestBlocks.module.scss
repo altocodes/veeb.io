@@ -1,0 +1,83 @@
+.mainInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .title {
+    color: #002033;
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  .output {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .item {
+      
+      h1 {
+        color: #002033;
+        font-size: 32px;
+        font-weight: 500;
+      }
+
+      .block {
+        display: flex;
+        align-items: center;
+
+        .value {
+          color: #4343FF;
+          cursor: pointer;
+        }
+
+        .whoIsKey {
+          font-size: 18px;
+          font-weight: 500;
+        }
+
+        .whoIsValue {
+          margin-left: 16px;
+        }
+  
+        .subLink {
+          margin-left: 15px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+.outputTest {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem 2rem;
+    border: 1px solid black;
+
+    & > div {
+      padding: 0 .5rem;
+
+      & > em:first-child {
+        font-weight: 500;
+      }
+
+      & > div:first-child {
+        color: red;
+      }
+    }
+  }
+
+  & > div > .titleOutput:first-child {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+}

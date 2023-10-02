@@ -1,0 +1,33 @@
+.output {
+  margin: 70px 0;
+
+  .backBtn {
+    display: flex;
+    align-items: center;
+    padding: 10px 32px;
+    font-size: 12px;
+
+    svg {
+      margin-right: 8px;
+    }
+
+    &:hover svg > path {
+      fill: #FFFFFF;
+    }
+  }
+
+  .foundContacts {
+    margin-top: 32px;
+    
+    .heading {  
+      .title {
+        font-size: 32px;
+      }
+  
+      .subtitle {
+        color: #ABABAB;
+        font-size: 12px;
+      }
+    }
+  }
+}
